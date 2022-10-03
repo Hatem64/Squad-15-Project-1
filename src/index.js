@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './css/index.css';
+import { createGlobalStyle } from 'styled-components';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
+// Create CSS variables globally
+const GlobalStyle = createGlobalStyle`
+  :root {
+    --Snow:#FFFFFF;
+    --Purple:#793EF5;
+    --X:#72F500;
+    --Dark:#1E1E1E;
+    --Yellow:#FFC33F;
+    --Red:#FB5159;
+    --Blue:#2153FF;
+    --Gray-50:#E2E6EB;
+    --Gray-10:#F1F4F8;
+    --Field-Stroke:#CECECE;
+    
+  }
+`;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyle>
+      <App />
+    </GlobalStyle>
   </React.StrictMode>
 );
 
