@@ -18,15 +18,14 @@ const GlobalStyle = createGlobalStyle`
     --Gray-50:#E2E6EB;
     --Gray-10:#F1F4F8;
     --Field-Stroke:#CECECE;
-    
+
   }
 `;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle>
-      <App />
-    </GlobalStyle>
+    <GlobalStyle />
+    <App />
   </React.StrictMode>
 );
 
