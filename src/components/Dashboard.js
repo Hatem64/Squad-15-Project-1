@@ -105,7 +105,7 @@ export default function Dashboard() {
         open={open}
         onClose={() => setOpen(false)}
       >
-        <SideNav isDesktopOrLaptop />
+        <SideNav isDesktopOrLaptop={isDesktopOrLaptop} />
       </Drawer>
       <StyledBackground>
         <Grid container spacing={2} direction="row">
