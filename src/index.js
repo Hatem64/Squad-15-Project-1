@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import { createGlobalStyle } from 'styled-components';
-import App from './components/App';
+import Dashboard from './components/Dashboard';
 import reportWebVitals from './reportWebVitals';
 
 // Create CSS variables globally
@@ -24,9 +24,8 @@ const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle>
-      <App />
-    </GlobalStyle>
+    <GlobalStyle />
+    <Dashboard />
   </React.StrictMode>
 );
 
