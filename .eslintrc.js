@@ -22,5 +22,7 @@ module.exports = {
     'linebreak-style': 'off',
     'blank-line': 'off',
     'object-curly-newline': 'off',
+    'operator-linebreak': 'off',
+    'react/prop-types': 'off',
   },
 };
